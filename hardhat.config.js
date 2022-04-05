@@ -15,6 +15,7 @@ task("accoun ts", "Prints the list of accounts", async () => {
 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const ROPSTEN_PRIVATE_KEY = process.env.ROPSTEN_PRIVATE_KEY;
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
 module.exports = {
   solidity: {
@@ -27,6 +28,6 @@ module.exports = {
     }
   },
   etherscan: {
-    apiKey: ""
+    apiKey: `${ETHERSCAN_API_KEY}`
   }
 };
