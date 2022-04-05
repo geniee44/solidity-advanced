@@ -13,8 +13,13 @@ task("accoun ts", "Prints the list of accounts", async () => {
   }
 });
 
+<<<<<<< HEAD
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 const ROPSTEN_PRIVATE_KEY = process.env.ROPSTEN_PRIVATE_KEY;
+=======
+const ALCHEMY_API_KEY = "";
+const ROPSTEN_PRIVATE_KEY = "";
+>>>>>>> 06a9398357ff4cb5c2009ce3a0ddb4cd11cb7132
 
 module.exports = {
   solidity: {
@@ -27,6 +32,6 @@ module.exports = {
     }
   },
   etherscan: {
-    apiKey: "F4AMWC3ZE7WPU5MHADBHZC8KH58SPBTHKG"
+    apiKey: ""
   }
 };
